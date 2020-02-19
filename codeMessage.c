@@ -63,7 +63,12 @@ int main(int argc, char **argv){
       fprintf(fp, "%c", decodedMessage[i]); 
     }
     fclose(fp);
-  }    
+  }  
+  int sizeWheel = wheelSize(convWheel);
+  for (i=0;i <sizeWheel;i++){
+      NODE *temp = convWheel ;
+      convWheel = convWheel -> nextNode;
+      free(temp);} 
   return 0;
   } 
 
