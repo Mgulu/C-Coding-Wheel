@@ -1,7 +1,7 @@
 #include "wheel.h"
 /*functions */
 
-extern void addNode(NODE** root,char val){
+static void addNode(NODE** root,char val){
   /* If there is no root node it creates a new node and sets
   it as the root Node */
   if (*root == NULL){
